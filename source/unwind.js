@@ -15,6 +15,7 @@ import _assoc from './internal/_assoc.js';
  * @param {String} key The key to determine which property of the object should be unwind
  * @param {Object} object The object containing list under property named as key which is to unwind
  * @return {List} A new list of object containing the value of input key having list replaced by each element in the object.
+ * @see R.unwind
  * @example
  *
  * R.unwind('hobbies', {
