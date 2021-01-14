@@ -30,7 +30,7 @@ import _assoc from './internal/_assoc.js';
 
 var unwind = _curry2(function(key, object) {
   // If key is not in object or key is not as a list in object
-  if (!(key in object && _isArray(object[key]))) {
+  if (!(key in object && _isArray(object[key]) && object[key].length)) {
     return [object];
   }
   // Map over object[key] which is a list and assoc each element with key
